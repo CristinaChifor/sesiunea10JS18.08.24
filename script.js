@@ -105,6 +105,41 @@ console.log(`Numele meu complet este ${fullName}`);
 let upperCase = fullName.toUpperCase();
 console.log(upperCase);
 
+let lowerCase = fullName.toLowerCase();
+console.log(lowerCase);
+
+let substringResult = fullName.substring(1, 4);
+console.log(substringResult);
+
+// verificare numar par/ impar
+
+let checkedNumber = 24;
+let remainder = checkedNumber % 2;
+let isEven = remainder === 0;
+console.log(`Number ${checkedNumber} is even: ${isEven}`);
+
+// 4. Boolean (True/ False)
+
+let isAdult = true;
+console.log(`isAdult = ${isAdult}`);
+let isOld = false;
+console.log(`isOld = ${isOld}`);
+
+// 5. Null & Undefined
+
+let nullValue = null;
+console.log(`Null value = ${nullValue}`);
+
+let notInitialized;
+console.log(`notInitialized = ${notInitialized}`);
+
+
+
+
+
+
+
+
 
 
 
