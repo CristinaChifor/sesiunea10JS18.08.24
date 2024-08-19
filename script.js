@@ -133,6 +133,123 @@ console.log(`Null value = ${nullValue}`);
 let notInitialized;
 console.log(`notInitialized = ${notInitialized}`);
 
+/**
+ Operatori in JavaScript
+ 1. Operatori de atribuire
+ */
+
+ let y = 5;
+ y += 3; // => y = y + 3; y= 5 + 3; y = 8;
+ y -= 2; // => y = y - 2; y= 5 - 2; y = 3;
+ y *= 2; // => y = y * 2; y= 5 * 2; y = 10;
+ y /= 2; // => y = y / 2; y= 5 / 2; y = 2.5;
+
+ // adaugare +1 la un numar
+
+ let x = 10;
+ console.log(`x=`, x);
+ x++; // incrementare
+ console.log(`x=`, x); 
+
+ // 2. Operatori de comparatie
+ // 2.1 Operatorul de egalitate == compara valoarea
+
+ let value1 = 22;
+ let value2 = 22;
+ let value3 = 23;
+ let value4 = "22";
+
+ let firstComperedResult = value1 == value2;
+ console.log(`${value1} == ${value2} => ${firstComperedResult}`);
+
+ let secondComperedResult = value1 == value3;
+ console.log(`${value1} == ${value3} => ${secondComperedResult}`);
+
+ let thirdComperedResult = value1 == value4;
+ console.log(`${value1} == ${value4} => ${thirdComperedResult}`);
+
+ // 2.2 Operatorul de egalitate stricta === compara si tipul de date
+
+ let strictEqualComparison = value1 === value4;
+ console.log(`${value1} === ${value4} => ${strictEqualComparison}`);
+
+ let strictEqualComparison2 = value1 === value2;
+ console.log(`${value1} === ${value2} => ${strictEqualComparison2}`);
+
+ let strictEqualComparison3 = value1 === value3;
+ console.log(`${value1} === ${value3} => ${strictEqualComparison3}`);
+
+ // 2.2 Operatorul de comparare mai mic (<), mai mic sau egal (<=)
+
+ let num1 =5;
+ let num2 = 6;
+ let num3 = 5;
+ let lessThanComparison =  num1 < num2;
+ console.log(`${num1} < ${num2} => ${lessThanComparison}`);
+
+ let lessThanComparison2 =  num2 < num1;
+ console.log(`${num2} < ${num1} => ${lessThanComparison2}`);
+
+ let lessOrEqualComparison = num1 <= num2;
+ console.log(`${num1} <= ${num2} => ${lessOrEqualComparison}`);
+
+ let  lessOrEqualComparison2 = num1 <= num3;
+ console.log(`${num1} <= ${num3} => ${lessOrEqualComparison2}`);
+
+ // 2.3 Operatorul de comparare mai mare (>), mai mare sau egal (>=)
+
+ let num4 = 5;
+ let num5 = 6;
+ let num6 = 5;
+ let moreThanComparison =  num4 > num5;
+ console.log(`${num4} > ${num5} => ${moreThanComparison}`);
+
+ let moreThanComparison2 =  num5 > num4;
+ console.log(`${num5} > ${num4} => ${moreThanComparison2}`);
+
+ let moreOrEqualComparison = num4 >= num5;
+ console.log(`${num4} >= ${num5} => ${moreOrEqualComparison}`);
+
+ let  moreOrEqualComparison2 = num4 >= num6;
+ console.log(`${num4} >= ${num6} => ${moreOrEqualComparison2}`);
+
+// 3. Operatori logici- boolean data
+ 
+ let trueValue = true;
+ let falseValue = false;
+
+ // 3.1 Operatorul si logic &&
+
+ let logicalAndResult = trueValue && falseValue;
+ console.log(`${trueValue} && ${falseValue} => ${logicalAndResult}`);
+
+logicalAndResult = falseValue && falseValue;
+console.log(`${falseValue} && ${falseValue} => ${logicalAndResult}`);
+
+logicalAndResult = trueValue && trueValue;
+console.log(`${trueValue} && ${trueValue} => ${logicalAndResult}`);
+
+ // 3.2 Operatorul sau logic ||
+
+ let logicalOrResult = trueValue || falseValue;
+ console.log(`${trueValue} || ${falseValue} => ${logicalOrResult}`);
+
+ logicalOrResult = falseValue || falseValue;
+ console.log(`${falseValue} || ${falseValue} => ${logicalOrResult}`);
+
+ logicalOrResult = trueValue || trueValue;
+ console.log(`${trueValue} || ${trueValue} => ${logicalOrResult}`);
+
+  // 3.3 Operatorul negare logica !
+
+  let notTrueValue = !trueValue;
+  console.log(`!${trueValue} => ${notTrueValue}`);
+
+  let notFalseValue = !falseValue;
+  console.log(`!${falseValue} => ${notFalseValue}`);
+
+
+
 
 
 
